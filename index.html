@@ -2,10 +2,13 @@
 <html>
     <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
         
         <link rel="stylesheet" href="js/lib/jquery-mobile/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/app.css" />
+
 	<script src="js/lib/jquery-mobile/jquery-1.11.1.min.js"></script>
 	<script src="js/lib/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
 	<script src="js/lib/fastclick.js"></script>
@@ -106,7 +109,7 @@
 		<div data-role="page" id="datos">
 			<div data-role="header" data-position="fixed">
 				<a href="javascript:atras()" data-icon="back">Atrás</a>
-				<h1>Datos</h1>
+				<h1 id="titleDatos">Datos</h1>
 				<a href="javascript:inicio()" data-icon="home">Inicio</a>
 			</div>
 			<div role="main" class="ui-content">
